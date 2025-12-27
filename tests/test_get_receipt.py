@@ -22,5 +22,4 @@ class TestGetReceipt:
         Price: {burger.get_price()}
         """
         current_receipt = burger.get_receipt()
-        print(len(current_receipt))
-        print(len(expected_receipt.strip()))
+        assert current_receipt == expected_receipt.strip()
